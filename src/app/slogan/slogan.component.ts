@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-slogan',
   templateUrl: './slogan.component.html',
-  styleUrls: ['./slogan.component.css']
+  styleUrls: ['./slogan.component.scss'],
 })
 export class SloganComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

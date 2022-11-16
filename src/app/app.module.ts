@@ -35,12 +35,10 @@ import { FormComponent } from './form/form.component';
     ServicesComponent,
     FormSectionComponent,
     AddressComponent,
-    FormComponent
+    FormComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
