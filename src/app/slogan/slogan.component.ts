@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slogan',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slogan.component.scss'],
 })
 export class SloganComponent implements OnInit {
+  @Input() text!: string;
+
   constructor() {}
 
   ngOnInit(): void {}

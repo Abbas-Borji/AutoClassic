@@ -1,6 +1,12 @@
-/* 
-Primary: #1363DF
-Seconday: #47B5FF
-Light: #47B5FF
-Dark: #06283D
-*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+$theme-colors: (
+  "primary": #1363df,
+  "secondary": #47b5ff,
+  "light": #dff6ff,
+  "dark": #06283d,
+);
+
+$font-family-base: "Poppins", sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
