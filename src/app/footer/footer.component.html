@@ -3,8 +3,20 @@
     <div class="info">
       <p class="m-0">Domkraftsvägen 1 / 197 40 Bro, Sweden</p>
       <p>08-582 404 29</p>
+<<<<<<< HEAD
       <div>
         <a href=""></a>
+=======
+      <div class="d-flex gap-3">
+        <a
+          *ngFor="let symbol of symbols"
+          target="{{ symbol.target }}"
+          href="{{ symbol.link }}"
+          class="text-white"
+        >
+          <fa-icon [icon]="symbol.icon" size="2x"></fa-icon>
+        </a>
+>>>>>>> 089a766209e1098512e58ff6e41fc92b935a7726
       </div>
     </div>
     <div class="d-flex gap-5">

@@ -17,6 +17,7 @@ import { ServicesComponent } from './services/services.component';
 import { FormSectionComponent } from './form-section/form-section.component';
 import { AddressComponent } from './address/address.component';
 import { FormComponent } from './form/form.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { FormComponent } from './form/form.component';
     AddressComponent,
     FormComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
