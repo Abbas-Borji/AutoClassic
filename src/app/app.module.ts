@@ -19,6 +19,7 @@ import { AddressComponent } from './address/address.component';
 import { FormComponent } from './form/form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,12 @@ import { AppRoutingModule } from './app-routing.module';
     AddressComponent,
     FormComponent,
   ],
-  imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FontAwesomeModule,
+    AppRoutingModule,
+    GoogleMapsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

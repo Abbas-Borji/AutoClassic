@@ -1,80 +1,99 @@
-<form class="px-3 py-4 min-h-100vh bg-primary text-bg-dark container-fluid">
-  <div class="mb-3 row">
-    <div class="col">
-      <label for="firstName">First Name</label>
-      <div>
-        <input type="text" class="form-control" id="firstName" />
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="d-none col-lg-6 d-lg-flex flex-column justify-content-center p-5"
+    >
+      <h3>Address:</h3>
+      <p>Domkraftsvägen 1 / 197 40 Bro, Sweden</p>
+      <h3>Email:</h3>
+      <p>support@autoclassic.se</p>
+      <h3>Phone:</h3>
+      <p class="mb-3">08-582 404 29</p>
+      <p>Available from 9 am till 5 pm Monday to Friday for phone calls</p>
     </div>
-    <div class="col">
-      <label for="lastName">Last Name</label>
-      <div>
-        <input type="text" class="form-control" id="lastName" />
-      </div>
-    </div>
-  </div>
 
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="" />
-  </div>
-
-  <div class="mb-3">
-    <label for="mobile" class="form-label">Mobile</label>
-    <input type="tel" class="form-control" id="mobile" />
-  </div>
-
-  <div class="mb-3 row">
-    <div class="col">
-      <label for="brand">Car Brand</label>
-      <div>
-        <input type="text" class="form-control" id="brand" />
+    <form class="px-3 col-lg-6 py-4 min-h-100vh bg-primary text-bg-dark">
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="firstName">First Name</label>
+          <div>
+            <input type="text" class="form-control" id="firstName" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="lastName">Last Name</label>
+          <div>
+            <input type="text" class="form-control" id="lastName" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col">
-      <label for="model">Car Model</label>
-      <div>
-        <input type="text" class="form-control" id="model" />
-      </div>
-    </div>
-  </div>
 
-  <div class="mb-3 row align-items-end">
-    <div class="col">
-      <label for="serial">Serial Number</label>
-      <div>
-        <input type="text" class="form-control" id="serial" />
+      <div class="row">
+        <div class="mb-3 col-12 col-sm-6">
+          <label for="email" class="form-label col-form-label"
+            >Email address</label
+          >
+          <input type="email" class="form-control" id="email" />
+        </div>
+        <div class="mb-3 col-12 col-sm-6">
+          <label for="mobile" class="form-label col-form-label">Mobile</label>
+          <input type="tel" class="form-control" id="mobile" />
+        </div>
       </div>
-    </div>
-    <div class="col">
-      <label for="meters">Meters Reading in Miles</label>
-      <div>
-        <input type="text" class="form-control" id="meters" />
-      </div>
-    </div>
-  </div>
 
-  <div class="mb-3 row">
-    <div class="col">
-      <label for="service">Service</label>
-      <div>
-        <input type="text" class="form-control" id="service" />
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="brand">Car Brand</label>
+          <div>
+            <input type="text" class="form-control" id="brand" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="model">Car Model</label>
+          <div>
+            <input type="text" class="form-control" id="model" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col">
-      <label for="mode">Year Mode</label>
-      <div>
-        <input type="text" class="form-control" id="mode" />
+
+      <div class="mb-3 row align-items-end">
+        <div class="col">
+          <label for="serial">Serial Number</label>
+          <div>
+            <input type="text" class="form-control" id="serial" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="meters">Meters Reading in Miles</label>
+          <div>
+            <input type="text" class="form-control" id="meters" />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="mb-4">
-    <label for="more" class="form-label">Tell Us More</label>
-    <textarea id="more" rows="3" class="form-control"></textarea>
-  </div>
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="service">Service</label>
+          <div>
+            <input type="text" class="form-control" id="service" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="mode">Year Mode</label>
+          <div>
+            <input type="text" class="form-control" id="mode" />
+          </div>
+        </div>
+      </div>
 
-  <div class="d-flex justify-content-center">
-    <button type="submit" class="btn quote-btn px-4">Get Quote</button>
+      <div class="mb-4">
+        <label for="more" class="form-label">Tell Us More</label>
+        <textarea id="more" rows="3" class="form-control"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn quote-btn px-4">Get Quote</button>
+      </div>
+    </form>
   </div>
-</form>
+</div>
