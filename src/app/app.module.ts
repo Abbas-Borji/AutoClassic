@@ -18,6 +18,7 @@ import { FormSectionComponent } from './form-section/form-section.component';
 import { AddressComponent } from './address/address.component';
 import { FormComponent } from './form/form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AddressComponent,
     FormComponent,
   ],
-  imports: [BrowserModule, FontAwesomeModule],
+  imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
