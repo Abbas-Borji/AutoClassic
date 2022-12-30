@@ -1,22 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { AnimationBuilder, animate, style } from '@angular/animations';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.scss'],
+  styleUrls: ['./counter.component.scss']
 })
 export class CounterComponent implements OnInit {
-  constructor(private _animationBuilder: AnimationBuilder) {}
-  animateCounter(element: any, endValue: number) {
-    const animation = this._animationBuilder.build([
-      animate('400ms ease-in-out', style({
-        // Animate the element's innerHTML from zero to the end value
-        innerHTML: `${endValue}`
-      }))
-    ]);
-    const player = animation.create(element);
-    player.play();
+  @ViewChild('cardTitleElement1') cardTitleElement1: ElementRef | null = null;
+  @ViewChild('cardTitleElement2') cardTitleElement2: ElementRef | null = null;
+  @ViewChild('cardTitleElement3') cardTitleElement3: ElementRef | null = null;
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
-  ngOnInit(): void {} 
+
+  animateCounter(element: HTMLElement, target: number): void {
+    let currentValue = 0;
+    const interval = setInterval(() => {
+      element.innerHTML = currentValue.toString();
+      currentValue++;
+      if (currentValue > target) {
+        clearInterval(interval);
+      }
+    }, 50);
+  }
+  
 }
