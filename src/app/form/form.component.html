@@ -14,7 +14,7 @@
 
     <form
       [formGroup]="form"
-      (ngSubmit)="onSubmit()"
+      (ngSubmit)="onSubmit(formRef)"
       #formRef="ngForm"
       class="px-3 col-lg-6 py-4 min-h-100vh bg-primary text-bg-dark"
     >
@@ -29,11 +29,7 @@
               id="firstName"
               required
               [ngClass]="{
-                'is-invalid':
-                  form.controls['First Name'].invalid &&
-                  (form.controls['First Name'].touched ||
-                    form.controls['First Name'].dirty ||
-                    formRef.submitted)
+                'is-invalid': (form.controls['First Name'].touched || formRef.submitted) && form.controls['First Name'].errors?.['required']
               }"
             />
           </div>
@@ -43,12 +39,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Last Name'].invalid &&
-                  (form.controls['Last Name'].touched ||
-                    form.controls['Last Name'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Last Name'].touched || formRef.submitted) && form.controls['Last Name'].errors?.['required']
+            }"
               formControlName="Last Name"
               type="text"
               class="form-control"
@@ -65,12 +57,8 @@
           >
           <input
             [ngClass]="{
-              'is-invalid':
-                form.controls['Email'].invalid &&
-                (form.controls['Email'].touched ||
-                  form.controls['Email'].dirty ||
-                  formRef.submitted)
-            }"
+            'is-invalid': (form.controls['Email'].touched || formRef.submitted) && form.controls['Email'].errors?.['required']
+          }"
             formControlName="Email"
             type="email"
             class="form-control"
@@ -81,12 +69,8 @@
           <label for="mobile" class="form-label col-form-label">Mobile</label>
           <input
             [ngClass]="{
-              'is-invalid':
-                form.controls['Mobile'].invalid &&
-                (form.controls['Mobile'].touched ||
-                  form.controls['Mobile'].dirty ||
-                  formRef.submitted)
-            }"
+            'is-invalid': (form.controls['Mobile'].touched || formRef.submitted) && form.controls['Mobile'].errors?.['required']
+          }"
             formControlName="Mobile"
             type="tel"
             class="form-control"
@@ -101,12 +85,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Car Brand'].invalid &&
-                  (form.controls['Car Brand'].touched ||
-                    form.controls['Car Brand'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Car Brand'].touched || formRef.submitted) && form.controls['Car Brand'].errors?.['required']
+            }"
               formControlName="Car Brand"
               type="text"
               class="form-control"
@@ -119,12 +99,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Car Model'].invalid &&
-                  (form.controls['Car Model'].touched ||
-                    form.controls['Car Model'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Car Model'].touched || formRef.submitted) && form.controls['Car Model'].errors?.['required']
+            }"
               formControlName="Car Model"
               type="text"
               class="form-control"
@@ -140,12 +116,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Serial Number'].invalid &&
-                  (form.controls['Serial Number'].touched ||
-                    form.controls['Serial Number'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Serial Number'].touched || formRef.submitted) && form.controls['Serial Number'].errors?.['required']
+            }"
               formControlName="Serial Number"
               type="text"
               class="form-control"
@@ -158,12 +130,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Meters'].invalid &&
-                  (form.controls['Meters'].touched ||
-                    form.controls['Meters'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Meters'].touched || formRef.submitted) && form.controls['Meters'].errors?.['required']
+            }"
               formControlName="Meters"
               type="text"
               class="form-control"
@@ -179,12 +147,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Service'].invalid &&
-                  (form.controls['Service'].touched ||
-                    form.controls['Service'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Service'].touched || formRef.submitted) && form.controls['Service'].errors?.['required']
+            }"
               formControlName="Service"
               type="text"
               class="form-control"
@@ -197,12 +161,8 @@
           <div>
             <input
               [ngClass]="{
-                'is-invalid':
-                  form.controls['Year Made'].invalid &&
-                  (form.controls['Year Made'].touched ||
-                    form.controls['Year Made'].dirty ||
-                    formRef.submitted)
-              }"
+              'is-invalid': (form.controls['Year Made'].touched || formRef.submitted) && form.controls['Year Made'].errors?.['required']
+            }"
               formControlName="Year Made"
               type="text"
               class="form-control"
