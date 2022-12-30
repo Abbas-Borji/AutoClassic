@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,6 +22,7 @@ import { FormComponent } from './form/form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { ServicesHeroComponent } from './services-hero/services-hero.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +42,16 @@ import { GoogleMapsModule } from '@angular/google-maps';
     FormSectionComponent,
     AddressComponent,
     FormComponent,
+    ServicesHeroComponent,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,
     GoogleMapsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

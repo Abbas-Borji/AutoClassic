@@ -1,4 +1,7 @@
 .quote-btn {
   background: #fefefe;
   font-weight: bold;
+  &:hover {
+    color: black;
+  }
 }

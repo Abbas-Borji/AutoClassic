@@ -21,6 +21,13 @@ export class FooterComponent implements OnInit {
     },
     { icon: faEnvelope, link: 'mailto:autoclassic@live.se' },
   ];
+  open = [
+    { date: 'Måndag', time: '7:00 - 17:00' },
+    { date: 'Tisdag', time: '7:00 - 17:00' },
+    { date: 'Onsdag', time: '7:00 - 17:00' },
+    { date: 'Torsdag', time: '7:00 - 17:00' },
+    { date: 'Fredag', time: '7:00 - 15:00' },
+  ];
   constructor() {}
 
   ngOnInit(): void {}

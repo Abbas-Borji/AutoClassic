@@ -12,18 +12,48 @@
       <p>Available from 9 am till 5 pm Monday to Friday for phone calls</p>
     </div>
 
-    <form class="px-3 col-lg-6 py-4 min-h-100vh bg-primary text-bg-dark">
+    <form
+      [formGroup]="form"
+      (ngSubmit)="onSubmit()"
+      #formRef="ngForm"
+      class="px-3 col-lg-6 py-4 min-h-100vh bg-primary text-bg-dark"
+    >
       <div class="mb-3 row">
         <div class="col">
           <label for="firstName">First Name</label>
           <div>
-            <input type="text" class="form-control" id="firstName" />
+            <input
+              formControlName="First Name"
+              type="text"
+              class="form-control"
+              id="firstName"
+              required
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['First Name'].invalid &&
+                  (form.controls['First Name'].touched ||
+                    form.controls['First Name'].dirty ||
+                    formRef.submitted)
+              }"
+            />
           </div>
         </div>
         <div class="col">
           <label for="lastName">Last Name</label>
           <div>
-            <input type="text" class="form-control" id="lastName" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Last Name'].invalid &&
+                  (form.controls['Last Name'].touched ||
+                    form.controls['Last Name'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Last Name"
+              type="text"
+              class="form-control"
+              id="lastName"
+            />
           </div>
         </div>
       </div>
@@ -33,11 +63,35 @@
           <label for="email" class="form-label col-form-label"
             >Email address</label
           >
-          <input type="email" class="form-control" id="email" />
+          <input
+            [ngClass]="{
+              'is-invalid':
+                form.controls['Email'].invalid &&
+                (form.controls['Email'].touched ||
+                  form.controls['Email'].dirty ||
+                  formRef.submitted)
+            }"
+            formControlName="Email"
+            type="email"
+            class="form-control"
+            id="email"
+          />
         </div>
         <div class="mb-3 col-12 col-sm-6">
           <label for="mobile" class="form-label col-form-label">Mobile</label>
-          <input type="tel" class="form-control" id="mobile" />
+          <input
+            [ngClass]="{
+              'is-invalid':
+                form.controls['Mobile'].invalid &&
+                (form.controls['Mobile'].touched ||
+                  form.controls['Mobile'].dirty ||
+                  formRef.submitted)
+            }"
+            formControlName="Mobile"
+            type="tel"
+            class="form-control"
+            id="mobile"
+          />
         </div>
       </div>
 
@@ -45,13 +99,37 @@
         <div class="col">
           <label for="brand">Car Brand</label>
           <div>
-            <input type="text" class="form-control" id="brand" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Car Brand'].invalid &&
+                  (form.controls['Car Brand'].touched ||
+                    form.controls['Car Brand'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Car Brand"
+              type="text"
+              class="form-control"
+              id="brand"
+            />
           </div>
         </div>
         <div class="col">
           <label for="model">Car Model</label>
           <div>
-            <input type="text" class="form-control" id="model" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Car Model'].invalid &&
+                  (form.controls['Car Model'].touched ||
+                    form.controls['Car Model'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Car Model"
+              type="text"
+              class="form-control"
+              id="model"
+            />
           </div>
         </div>
       </div>
@@ -60,13 +138,37 @@
         <div class="col">
           <label for="serial">Serial Number</label>
           <div>
-            <input type="text" class="form-control" id="serial" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Serial Number'].invalid &&
+                  (form.controls['Serial Number'].touched ||
+                    form.controls['Serial Number'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Serial Number"
+              type="text"
+              class="form-control"
+              id="serial"
+            />
           </div>
         </div>
         <div class="col">
           <label for="meters">Meters Reading in Miles</label>
           <div>
-            <input type="text" class="form-control" id="meters" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Meters'].invalid &&
+                  (form.controls['Meters'].touched ||
+                    form.controls['Meters'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Meters"
+              type="text"
+              class="form-control"
+              id="meters"
+            />
           </div>
         </div>
       </div>
@@ -75,20 +177,49 @@
         <div class="col">
           <label for="service">Service</label>
           <div>
-            <input type="text" class="form-control" id="service" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Service'].invalid &&
+                  (form.controls['Service'].touched ||
+                    form.controls['Service'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Service"
+              type="text"
+              class="form-control"
+              id="service"
+            />
           </div>
         </div>
         <div class="col">
-          <label for="mode">Year Mode</label>
+          <label for="mode">Year Made</label>
           <div>
-            <input type="text" class="form-control" id="mode" />
+            <input
+              [ngClass]="{
+                'is-invalid':
+                  form.controls['Year Made'].invalid &&
+                  (form.controls['Year Made'].touched ||
+                    form.controls['Year Made'].dirty ||
+                    formRef.submitted)
+              }"
+              formControlName="Year Made"
+              type="text"
+              class="form-control"
+              id="mode"
+            />
           </div>
         </div>
       </div>
 
       <div class="mb-4">
         <label for="more" class="form-label">Tell Us More</label>
-        <textarea id="more" rows="3" class="form-control"></textarea>
+        <textarea
+          formControlName="More Information"
+          id="more"
+          rows="3"
+          class="form-control"
+        ></textarea>
       </div>
 
       <div class="d-flex justify-content-center">
