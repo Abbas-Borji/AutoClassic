@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { CounterComponent } from './counter/counter.component';
@@ -48,13 +47,13 @@ import { ServicesHeroComponent } from './services-hero/services-hero.component';
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     GoogleMapsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, FontAwesomeModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
