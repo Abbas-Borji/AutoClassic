@@ -1,1 +1,23 @@
-<p>counter works!</p>
+<div class="card-deck bg-secondary">
+  <div class="card text-center bg-dark text-white" (mouseenter)="animateCounter(cardTitleElement1, 45000)">
+    <div class="card-body">
+      <h1 #cardTitleElement1 class="card-title text-secondary">0</h1>
+      <h5 class="card-text">No. of tires stored at our workshop</h5>
+    </div>
+  </div>  
+  <div class="card text-center bg-dark text-white" (mouseenter)="animateCounter(cardTitleElement2, 20)">
+    <div class="card-body">
+      <h1 #cardTitleElement2 class="card-title text-secondary">0</h1>
+      <h5 class="card-text">Years of experience in automobile industry</h5>
+    </div>
+  </div>
+  <div class="card text-center bg-dark text-white" (mouseenter)="animateCounter(cardTitleElement3, 9000)">
+      <div class="card-body">
+        <h1 #cardTitleElement3 class="card-title text-secondary">0</h1>
+        <h5 class="card-text">No. of delighted customers served</h5>
+      </div>
+    </div>
+</div>
+<div class="ruler bg-secondary">
+  <hr>
+</div>

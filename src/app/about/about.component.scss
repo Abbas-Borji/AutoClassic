@@ -1,3 +1,55 @@
-.about {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// For Large Screens
+@media (min-width:500px){
+  
+  // Left Part
+  .aboutUsLeft img {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+  }
+
+  // Right Part
+  .aboutUsRight {
+    padding: 5%;
+  }
+  .aboutUsRight p {
+    margin-top: 10%;
+    font-size: 1.2rem;
+  }
+  .aboutUsRight h1 {
+    font-size: 3rem;
+  }
+}
+
+// Mobile Screens
+@media (max-width:500px){
+
+  // Upper Part
+  .aboutUsLeft img {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+  }
+
+  // Lower Part
+  .aboutUsRight {
+    height: 50vh;
+    padding: 10%;
+  }
+  .aboutUsRight p {
+    margin-top: 5%;
+    font-size: 0.9rem;
+  }
+  .aboutUsRight h1 {
+    font-size: 2rem;
+  }
 }

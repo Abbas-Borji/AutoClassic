@@ -1,4 +1,18 @@
-.slogan {
-  height: 50vh;
-  font-weight: 800;
+
+// For Large Screens
+@media (min-width: 501px) {
+  .slogan {
+    height: 50vh;
+    font-weight: 800;
+    font-size: 4.5rem;
+  }
+}
+
+// For Mobile Screens
+@media (max-width: 500px) {
+  .slogan {
+    height: 35vh;
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
 }

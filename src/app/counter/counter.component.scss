@@ -1,0 +1,76 @@
+
+hr {
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;
+    border: 0.15rem solid;
+    border-color: #06283d;
+    opacity: 1;
+    border-radius: 25px;
+}
+
+// Large Screens
+@media only screen and (min-width: 1024px){
+    .card-deck {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3%;
+    }
+
+    .card {
+        flex: 1 0 20%;
+        height: 42vh;
+        margin: 3%;
+        border-radius: 20px;
+        padding: 2%;
+    }
+
+    .card-title {
+        margin-bottom: 10%;
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+    
+    .ruler {
+        width: 100%;
+        height: 15vh;
+    }
+
+}
+
+// Mobile Screens
+@media only screen and (max-width: 1023px){
+    .card-deck {
+        width: 100%;
+        display: block;
+        padding: 10% 2%;
+    }
+
+    .card {
+        width: 80%;
+        height: 33vh;
+        margin: 10% auto;
+        border-radius: 20px;
+        padding: 5%;
+    }
+
+    .card-title {
+        margin-bottom: 12%;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .card-text {
+        font-size: 1.2rem;
+    }
+
+    .ruler {
+        width: 100%;
+        height: 10vh;
+    }
+}

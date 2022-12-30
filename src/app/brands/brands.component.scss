@@ -1,0 +1,22 @@
+
+// For Large Screens
+@media (min-width:500px) {
+    .container-fluid {
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+// For Mobile Screens
+@media (max-width:500px) {
+    .container-fluid {
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        height: 50vh;
+    }
+}
