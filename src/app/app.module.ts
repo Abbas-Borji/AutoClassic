@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
@@ -23,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ServicesHeroComponent } from './services-hero/services-hero.component';
+import { CountUpModule } from 'ngx-countup';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ServicesHeroComponent } from './services-hero/services-hero.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CountUpModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
