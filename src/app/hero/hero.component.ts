@@ -9,4 +9,5 @@ export class HeroComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
 }

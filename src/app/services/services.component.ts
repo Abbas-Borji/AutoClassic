@@ -13,8 +13,8 @@ export class ServicesComponent implements OnInit {
       text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
-      image: 'assets/tire-storage.jpg',
-      title: 'Tire Storage',
+      image: 'assets/car-repair.jpg',
+      title: 'Car Repair',
       text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     },
     {
