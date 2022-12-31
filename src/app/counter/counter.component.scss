@@ -27,9 +27,16 @@ hr {
     }
 
     .card-title {
-        margin-bottom: 10%;
         font-size: 3.2rem;
         font-weight: 700;
+        width: fit-content;
+        display: inline-block;
+    }
+
+    .displayInline {
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: 10%;
     }
 
     .card-text {
@@ -60,9 +67,16 @@ hr {
     }
 
     .card-title {
-        margin-bottom: 12%;
         font-size: 2.2rem;
         font-weight: 700;
+        width: fit-content;
+        display: inline-block;
+    }
+
+    .displayInline {
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: 12%;
     }
 
     .card-text {

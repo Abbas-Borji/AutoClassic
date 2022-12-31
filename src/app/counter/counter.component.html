@@ -1,29 +1,28 @@
 <div class="card-deck bg-secondary">
   <div class="card text-center bg-dark text-white">
     <div class="card-body">
-      <h1 #tiresCounters [countUp]="tires" class="card-title text-secondary">
-        0
-      </h1>
+      <div class="displayInline">
+        <h1 #tiresCounters [countUp]="tires" class="card-title text-secondary">0</h1>
+        <h1 class="card-title text-secondary">+</h1>
+      </div>
       <h5 class="card-text">No. of tires stored at our workshop</h5>
     </div>
   </div>
   <div class="card text-center bg-dark text-white">
     <div class="card-body">
-      <h1 #yearsCounter [countUp]="years" class="card-title text-secondary">
-        0
-      </h1>
+      <div class="displayInline">
+        <h1 #yearsCounter [countUp]="years" class="card-title text-secondary">0</h1>
+        <h1 class="card-title text-secondary">+</h1>
+      </div>
       <h5 class="card-text">Years of experience in automobile industry</h5>
     </div>
   </div>
   <div class="card text-center bg-dark text-white">
     <div class="card-body">
-      <h1
-        #customersCounter
-        [countUp]="customers"
-        class="card-title text-secondary"
-      >
-        0
-      </h1>
+      <div class="displayInline">
+        <h1 #customersCounter [countUp]="customers" class="card-title text-secondary">0</h1>
+        <h1 class="card-title text-secondary">+</h1>
+      </div>
       <h5 class="card-text">No. of delighted customers served</h5>
     </div>
   </div>

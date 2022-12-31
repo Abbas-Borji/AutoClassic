@@ -1,20 +1,24 @@
 table,
 .info {
-  font-size: 19px;
+  font-size: 1rem;
 }
 
 .open {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .copy {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
-@media screen and (min-width: 576px) {
-  .foo {
-    max-height: 50vh !important;
-  }
+// For Large Screens
+@media screen and (min-width: 501px) {
+  
+}
+
+// For Mobile Screens
+@media screen and (max-width: 500px) {
+
 }

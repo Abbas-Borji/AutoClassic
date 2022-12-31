@@ -1,7 +1,7 @@
 <section class="container-fluid">
-  <div class="row p-4" style="background-color: #f8f1f1">
-    <div class="col-12 col-md-6 p-4" *ngFor="let service of servicesList">
-      <div class="card h-100">
+  <div class="row p-5" style="background-color: #f8f1f1">
+    <div class="mb-4 col-12 col-md-6" *ngFor="let service of servicesList">
+      <div class="card h-100 text-dark">
         <img
           src="{{ service.image }}"
           class="card-img-top"
@@ -9,7 +9,7 @@
           height="70%"
         />
         <div class="card-body">
-          <h5 class="card-title">{{ service.title }}</h5>
+          <h5 class="card-title ">{{ service.title }}</h5>
           <p class="card-text">{{ service.text }}</p>
         </div>
       </div>
